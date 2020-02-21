@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Bootstrap CSS -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/korean_font.css">
+    <!-- # Bootstrap CSS -->
+</head>
+
+<body>
+    <div class="flex-grow-1 d-flex flex-column">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-9 col-lg-10 mx-auto" id="content">
+                    <div class="row">
+                        <div class="col-md pt-5">
+                            <!-- 이미지 업로드 영역 -->
+                            <section id="upload_area" class="bg-faded py-2">
+                                <!-- Title -->
+                                <div class="d-flex my-3">
+                                    <div class="w-100 py-5 mx-auto" style="background-color: #43c6db;">
+                                        <h1 align="center">당신의 퍼스널 컬러는 무엇입니까?</h1>
+                                        <p align="center" class="lead">사진을 업로드하세요. 당신에게 가장 잘 어울리는 화장품을 추천해드립니다!</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-4 mb-4">
+                                        <div class="card border-info h-100">
+                                            <div class="card-body d-flex flex-column align-items-start">
+                                                <h4 class="card-title text-info">1. 사진 등록</h4>
+                                                <!-- <p class="card-text">upload images</p> -->
+                                                <form id="frm_upload" action="/fileUpload" method="POST" enctype="multipart/form-data">
+                                                    <div class="custom-file mb-3">
+                                                        <input type="file" name="img_file" class="custom-file-input" readonly>
+                                                        <label class="custom-file-label" for="img_file">Upload Images</label>
+                                                    </div>
+                                                    <input type="button" id="btn_upload" class="btn btn-info btn-lg" value="분석할 사진 올리기">
+                                                </form>
+                                                {% if upload_file_name %}
+                                                    <form id="frm_predict" action="/predict" method="POST">
+                                                        <input type="hidden" id="i_filename" name="i_filename" value="{{ upload_file_name }}">
+                                                    </form>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 판단(분류) 결과 영역 -->
+                            <section id="classify area" class="bg-faded py-2">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-4 mb-4">
+                                        <div class="card border-info h-100">
+                                            <div class="card-body d-flex flex-column align-items-start">
+                                                <h4 class="card-title text-info">2. 퍼스널 컬러 진단</h4>
+                                                <p class="card-text">당신의 퍼스널 컬러를 진단해드립니다.</p>
+                                                {% if upload_file_name %}
+                                                    <input type="button" id="btn_predict" class="btn btn-warning btn-lg mb-2" value="진단하기">
+                                                {% endif %}
+                                                {% if face_season %}
+                                                    <img src="{{ url_for('download_img', filename=upload_file_name, gubun='face') }}" id="img_face" class="mx-auto d-block" style="width: 300px; height: 300px;">
+
+                                                    <div id="result_area" class="mx-auto d-block mt-3 invisible">
+                                                        <h2>당신은 {{ face_season_kor }} {{ face_tone_kor }}톤  입니다.</h2>
+                                                    </div>
+
+                                                {% endif %}
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 화장품 추천 영역 -->
+                            <section id="cosmetic_area" class="bg-faded py-2">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-4 mb-4">
+                                        <div class="card border-info h-100">
+                                            <div class="card-body d-flex flex-column align-items-start">
+                                                <h4 class="card-title text-info">3. 화장품 추천</h4>
+                                                <p class="card-text"> 해당 퍼스널컬러에 어울리는 화장품을 추천해드립니다.</p>
+                                                {% if face_season %}
+                                                    <table class="mx-auto d-block">
+                                                        <tr>
+                                                            <th>Blusher</th>
+                                                            <th>Shadow</th>
+                                                            <th>Lipstick</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="{{ url_for('download_cosmetic_img', gubun_season=face_season, gubun_cosmetic='blusher') }}" id="img1" class="mx-auto d-block" style="width: 200px; height: 200px; border: 1px solid black;"></td>
+                                                            <td><img src="{{ url_for('download_cosmetic_img', gubun_season=face_season, gubun_cosmetic='shadow') }}" id="img2" class="mx-auto d-block" style="width: 200px; height: 200px; border: 1px solid black;"></td>
+                                                            <td><img src="{{ url_for('download_cosmetic_img', gubun_season=face_season, gubun_cosmetic='lipstick') }}" id="img3" class="mx-auto d-block" style="width: 200px; height: 200px; border: 1px solid black;"></td>
+                                                        </tr>
+                                                    </table>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- # Bootstrap script -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+        });
+
+        $(".custom-file-input").on("change", function () {
+            // file input에서 파일 선택 시 선택한 파일명으로 input값 변경
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+
+            // 이전 결과 초기화
+            $("img").attr("src", "");
+            $("img").addClass("invisible");
+            $("#result_area").addClass("invisible");
+            $("#btn_predict").addClass("invisible");
+        });
+
+        // 업로드 버튼 event
+        $("#btn_upload").on("click", function () {
+            $("#frm_upload").submit();
+        });
+
+        // 진단하기 버튼 event
+        $("#btn_predict").on("click", function () {
+            $("#frm_predict").submit();
+        });
+
+        $("#img_face").on("load", function () {
+            $("#result_area").removeClass("invisible");
+            $("#btn_predict").addClass("invisible");
+        });
+
+    </script>
+</body>
+</html>

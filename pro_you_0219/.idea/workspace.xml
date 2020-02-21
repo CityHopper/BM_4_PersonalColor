@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6bb763c4-906f-4290-9505-c032f0554e68" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y0kvxaaHrwnLU78j0GOfiu7B48" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/palette" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ICT01_03\PycharmProjects\pro_you_0219\static\palette" />
+      <recent name="C:\Users\ICT01_03\PycharmProjects\pro_you_0219\static\cosmetic" />
+      <recent name="C:\Users\ICT01_04\PycharmProjects\pro_you_0219" />
+      <recent name="C:\Users\ICT01_04\PycharmProjects\pro_you_0219\static\landmarks" />
+      <recent name="C:\Users\ICT01_04\PycharmProjects\pro_you_0219\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ICT01_03\PycharmProjects\pro_you_0219\templates" />
+      <recent name="C:\Users\ICT01_04\PycharmProjects\pro_you_0219\model" />
+      <recent name="C:\Users\ICT01_04\PycharmProjects\pro_you_0219" />
+      <recent name="C:\Users\ICT01_04\PycharmProjects\pro_you_0219\static\image" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="pro_you_0219" type="Python.FlaskServer">
+      <option name="flaskDebug" value="true" />
+      <module name="pro_you_0219" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\ICT01_03\Anaconda3\envs\venv\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bb763c4-906f-4290-9505-c032f0554e68" name="Default Changelist" comment="" />
+      <created>1582087133688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582087133688</updated>
+      <workItem from="1582087140887" duration="9953000" />
+      <workItem from="1582108726589" duration="1486000" />
+      <workItem from="1582110227759" duration="8791000" />
+      <workItem from="1582120778843" duration="7078000" />
+      <workItem from="1582183770855" duration="17220000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="181" key="#Notifications" timestamp="1582110245602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="181" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1582110245602" />
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582123375561">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582123375561" />
+    <state x="1199" y="349" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582095654487">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1199" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582095654487" />
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582195620215">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582195620215" />
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1582111617927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582111617927" />
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1582261878490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582261878490" />
+    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1582261878490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582261878490" />
+    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1582261878489">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582261878489" />
+    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1582261878490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582261878490" />
+    <state width="1877" height="242" key="GridCell.Tab.1.bottom" timestamp="1582261878490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582261878490" />
+    <state width="1877" height="242" key="GridCell.Tab.1.center" timestamp="1582261878490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582261878490" />
+    <state width="1877" height="242" key="GridCell.Tab.1.left" timestamp="1582261878490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582261878490" />
+    <state width="1877" height="242" key="GridCell.Tab.1.right" timestamp="1582261878490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582261878490" />
+    <state x="337" y="285" key="SettingsEditor" timestamp="1582183816353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="337" y="285" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582183816353" />
+    <state x="664" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1582183771686">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582183771686" />
+    <state x="595" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582199483317">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="595" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582199483317" />
+    <state x="975" y="152" width="592" height="735" key="find.popup" timestamp="1582096743133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="975" y="152" width="592" height="735" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582096743133" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1582195425209">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582195425209" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Python.FlaskServer">
+        <watch expression="file_path + file_name + img_type" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pro_you_0219$pro_you_0219.coverage" NAME="pro_you_0219 Coverage Results" MODIFIED="1582202547223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
